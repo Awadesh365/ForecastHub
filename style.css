@@ -1,0 +1,192 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+.container h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #007bff;
+    /* Blue text color */
+}
+
+/* Body styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    /* Light gray background */
+}
+
+/* Container styles */
+.container {
+    width: 400px;
+    height: min-content;
+    background-color: #ffffff;
+    /* White background */
+    border-radius: 12px;
+    padding: 28px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Box shadow for a card-like appearance */
+}
+
+/* Search box styles */
+.search-box {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input {
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #333;
+    /* Dark text color */
+    background-color: #e6f5fb;
+    padding: 12px 16px;
+    border-radius: 14px;
+    border: 1px solid #ccc;
+    /* Add a subtle border */
+}
+
+.search-box input::placeholder {
+    color: #999;
+    /* Lighter placeholder text */
+}
+
+.search-box button {
+    width: 46px;
+    height: 46px;
+    background-color: #007bff;
+    /* Blue button color */
+    color: #fff;
+    /* White button text color */
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    /* Remove button border */
+    transition: background-color 0.3s ease-in-out;
+    /* Smooth hover effect */
+}
+
+.search-box button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Weather body styles */
+.weather-body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Weather image styles */
+.weather-body img {
+    width: 60%;
+    max-width: 200px;
+    /* Limit image size */
+}
+
+/* Weather box styles */
+.weather-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-box .temperature {
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather-box .temperature sup {
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+    top: -10px;
+    /* Adjust vertical position of the superscript */
+}
+
+.weather-box .description {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 10px;
+    /* Add space below temperature */
+}
+
+/* Weather details styles */
+.weather-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    align-items: center;
+}
+
+.humidity {
+    margin-left: 20px;
+}
+
+.wind {
+    margin-right: 20px;
+}
+
+.weather-details i {
+    font-size: 36px;
+    color: #007bff;
+    /* Blue icon color */
+}
+
+.weather-details .text {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Location not found styles */
+.location-not-found {
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location-not-found h1 {
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end: 15px;
+}
+
+.location-not-found img {
+    width: 80%;
+    max-width: 300px;
+    /* Limit image size */
+}
